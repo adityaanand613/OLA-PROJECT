@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    /* background-color: rgba(0,47,52,0.03); */
+    /* background-color: black; */
+    height: 9vh;
+    width: 100vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Nav inside header */
+
+nav{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin-top: -4%;
+}
+
+nav ul{
+    width: 100%;
+    height: 9.2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    /* border: 2px solid red; */
+    position: fixed;
+}
+
+ul .location{
+    border: 1.6px solid black;
+    width: 17%;
+    height: 70%;
+    border-radius: 5px;
+}
+
+.location select{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+    color: #002f34;
+}
+
+.location:has(select:focus){
+    border: 1.6px solid cyan;
+}
+
+ul .form{
+    border: none;
+    width: 55%;
+    height: 72%;
+    border-radius: 5px;
+}
+
+.form form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 1%;
+    border: 1.6px solid black;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius:8px;
+}
+
+form input:focus{
+    border: 1.6px solid cyan;
+}
+
+.form i{
+    background-color: #002f34;
+    color: white;
+    padding: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul .lang{
+    /* border: none; */
+    width: 6%;
+    height: 70%;
+}
+
+.lang select{
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    color: #002f34;
+}
+
+.log .login{
+    color: #002f34;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.log .login:hover{
+    text-decoration: none;
+}
+
+ul .button{
+    background-color: cyan;
+    /* border: 2px solid blue; */
+    width: 6.7%;
+    height: 62%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    /* box-shadow: 8px 4px 20px; */
+}
+
+.button button{
+    width: 88%;
+    height: 73%;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+}
+
+.button button .fa-solid{
+    /* font-weight: 1000; */
+    font-size: medium; 
+}
+
+
+
+/* Another Section inside Header */
+
+.lower-header{
+    /* background-color: bisque; */
+    margin-top: 4%;
+    width: 100%;
+    height: 58%;
+    border: 3px solid rgba(0,47,52,0.03);;
+    border-top: 4px solid rgba(0,47,52,0.03);;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lower-header ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 3px;
+    column-gap: 1%;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.lower-header ul li:hover{
+    color: #00a49f;;
+    cursor: pointer;
+}
+
+.lower-header ul .first-child{
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 4%;
+}
+
+.lower-header ul .first-child:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+/* main{
+    margin-top: 5%;
+} */
+
+/*ad1-img */
+.ad1{
+    height: 300px;
+    margin: 5px;
+    /* margin-top: 15%; */
+    display: flex;
+    justify-content: center;
+}
+.ad1 .ad-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FA;
+    width: 70%;
+    img{
+        border: 1px solid #EFF1F3;
+        cursor: pointer;
+    }
+}
+.ad1 .ad-container p{
+    font-size: 0.8rem;
+}
+
+/* recommendations  grid*/
+body {
+    overflow-x: hidden;
+}
+.grid h2{
+    text-align: center;
+}
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(5, 300px);
+    grid-template-columns: repeat(4, 300px);
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+.card {
+    height: 280px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 15px;
+}
+.card .card-content .fit-img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 14px;
+    color: #555;
+}
+.card .location {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+
+/* load more button */
+.load-more-button{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.load-more-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000;
+    background-color: #f8f9fa;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.load-more-btn:hover {
+    background-color: #f8f9fa;
+    border: 2px solid black;
+}
+
+/*ad2-img */
+.ad2{
+    height: 300px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.ad2 .ad-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #F8F9FA; */
+    width: 70%;
+    img{
+        border: 1px solid #EFF1F3;
+        cursor: pointer;
+    }
+}
+.ad2 .ad-container p{
+    font-size: 0.8rem;
+}
+
+/* TOP FOOTER */
+.top-footer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #F7F8F9;
+}
+
+.top-footer .olx-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    p{
+        font-size: 1.2rem;
+    }
+    
+}
+
+.top-footer .get-your-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.top-footer .get-your-app .stores img{
+    width: 90px;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer-section{
+    width: 100vw;
+    /* margin: 20px; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #EBEEEF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100vw;
+    font-size: small;
+    
+}
+.footer-container ul li{
+    padding-top: 4px;
+}
+
+.footer-section .popular-locations ul li{
+    list-style: none;
+}
+.footer-section .popular-locations ul li a{
+        text-decoration: none;
+        color: #71674e;
+}
+.footer-section .tranding-locations ul li{
+    list-style: none;
+}
+.footer-section .tranding-locations ul li a{
+    text-decoration: none;
+    color: #71674e;
+}
+.footer-section .about-us ul li{
+    list-style: none;
+}
+.footer-section .about-us ul li a{
+    text-decoration: none;
+    color: #71674e;
+}
+.footer-section .olx ul li{
+    list-style: none;
+}
+.footer-section .olx ul li a{
+    text-decoration: none;
+    color: #71674e;
+}
+
+.footer-section .follow-us{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-section .follow-us .social-links a img{
+    width: 20px;
+    cursor: pointer;
+}
+.footer-section .follow-us .app-links a img{
+    width: 100px;
+    cursor: pointer;
+}
+
+.footer-section .footer-container a:hover{
+    color: black;
+}
+
+
+
+/* footer */
+.footer-ele{
+    background-color: #002F34;
+    display: flex;
+    flex-direction: column;
+}
+.footer-ele .footer-img{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.footer-ele .footer-img img{
+    width: 100px;
+}
+.footer-ele .footer-img .img1{
+    width: 150px;
+}
+.footer-ele .footer-img .img2{
+    width: 50px;
+}
+
+.footer-ele .copyright{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 12px;
+}
